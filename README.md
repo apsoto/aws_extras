@@ -1,13 +1,19 @@
-# Description #
-Cookbook with some useful recipes for managing Amazon Web Services components
+# AWS_EXTRAS
 
-## Recipes ##
+Chef cookbook with some useful recipes for managing Amazon Web Services components
 
-* aws_extras::swap
+## Recipes
 
-    Only m1.small instance types have swap, therefore this recipe creates a
-    swap file at /mnt/swapfile equivalent to system memory.
+### aws_extras::swap
 
-* aws_extras:ec2_metadata
+Only m1.small instance types have swap, therefore this recipe creates a
+swap file at /mnt/swapfile equivalent to system memory.
 
-    Installs the [ec2-metadata](http://aws.amazon.com/code/1825) script.
+### aws_extras:ec2_metadata
+
+Installs the [ec2-metadata](http://aws.amazon.com/code/1825) script.
+
+
+## History
+* 1.1     Updated ec2-metadata script
+* 1.0     Initial release
